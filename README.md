@@ -1,4 +1,5 @@
-!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -18,6 +19,19 @@
       display: none;
       width: 100%;
       height: auto;
+    }
+
+    /* Style for the animal name */
+    .animal-name {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 18px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px;
     }
 
     /* Style for the navigation arrows */
@@ -51,9 +65,18 @@
 
 <div class="slider-container">
   <!-- Images -->
-  <img class="slide" src="https://via.placeholder.com/800x400?text=Cat" alt="Cat">
-  <img class="slide" src="https://via.placeholder.com/600x300?text=Rabbit" alt="Rabbit">
-  <img class="slide" src="https://via.placeholder.com/500x250?text=Dog" alt="Dog">
+  <div class="slide">
+    <img src="https://via.placeholder.com/800x400?text=Cat" alt="Cat">
+    <div class="animal-name">Cat</div>
+  </div>
+  <div class="slide">
+    <img src="https://via.placeholder.com/600x300?text=Rabbit" alt="Rabbit">
+    <div class="animal-name">Rabbit</div>
+  </div>
+  <div class="slide">
+    <img src="https://via.placeholder.com/500x250?text=Dog" alt="Dog">
+    <div class="animal-name">Dog</div>
+  </div>
 
   <!-- Navigation arrows -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -86,3 +109,4 @@
 
 </body>
 </html>
+ 
